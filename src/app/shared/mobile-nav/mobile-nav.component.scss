@@ -1,0 +1,33 @@
+.wrapper {
+  width: 100vw;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.mobile-nav {
+  width: 95%;
+  border-radius: 2.5rem;
+  background: var(--light);
+  display: flex;
+  align-items: center;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.26);
+}
+
+img {
+  width: 25px;
+}
+
+.text {
+  font-size: 12px;
+}
+
+.col {
+  text-align: center;
+}
+
+.row {
+  width: 100%;
+  justify-content: space-evenly;
+}

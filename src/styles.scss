@@ -1,1 +1,96 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Oswald:wght@400;700&display=swap");
+
+:root {
+  --dark: #3c2f42;
+  --light: #56435e;
+  --xlight: #d5a7eb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+  font-family: "Oswald", sans-serif;
+  color: whitesmoke;
+}
+
+p,
+a,
+button.standard {
+  font-family: "Lato", sans-serif;
+  color: whitesmoke;
+}
+
+b {
+  color: var(--xlight);
+}
+
+.container {
+  margin: 0 3rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+button.standard {
+  margin: 15px 0;
+  background: var(--light);
+  width: 5rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.26);
+  transition: 0.4s;
+}
+
+button.dark {
+  background: var(--dark);
+}
+
+button.standard:hover {
+  box-shadow: 6px 6px 3px rgba(0, 0, 0, 0.26);
+  background: var(--xlight);
+  transform: scale(1.1);
+}
+
+ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+select,
+textarea {
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+}

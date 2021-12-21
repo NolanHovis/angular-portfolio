@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  background: var(--dark);
+  padding: 30px 20px 100px 20px;
+  justify-content: space-around;
+}
+
+.col.links {
+  text-align: center;
+}
+
+.profile {
+  display: flex;
+  width: 85px;
+  border-radius: 50%;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.socials {
+  margin: 5px;
+}

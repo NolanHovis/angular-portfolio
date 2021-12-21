@@ -1,0 +1,31 @@
+form {
+  margin: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+input,
+select,
+textarea {
+  color: whitesmoke;
+  border: none;
+  background: var(--dark);
+  outline: var(--xlight);
+}
+
+input {
+  line-height: 2rem;
+}
+
+select {
+  height: 2rem;
+}
+
+h1 {
+  margin: 40px;
+  padding: 20px 0px;
+}
