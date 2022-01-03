@@ -26,6 +26,18 @@ select {
 }
 
 h1 {
-  margin: 40px;
+  margin: 0px 40px 20px 40px;
   padding: 20px 0px;
+}
+
+hr {
+  background-color: var(--dark);
+  height: 2px;
+  border: none;
+  width: 15rem;
+  margin: 0 auto;
+}
+
+textarea {
+  height: 150px;
 }
