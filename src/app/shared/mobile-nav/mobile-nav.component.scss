@@ -1,6 +1,6 @@
 .wrapper {
   width: 100vw;
-  height: 65px;
+  height: 80px;
   display: flex;
   justify-content: center;
   margin: 10px 0;
@@ -19,6 +19,15 @@ img {
   width: 25px;
 }
 
+.col {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .text {
   font-size: 12px;
 }
@@ -30,4 +39,8 @@ img {
 .row {
   width: 100%;
   justify-content: space-evenly;
+}
+
+.active {
+  background-color: var(--dark);
 }

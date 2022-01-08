@@ -26,4 +26,10 @@ nav {
 
 .nav-list > li {
   margin: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.active {
+  border-bottom: 2px solid var(--light);
 }
