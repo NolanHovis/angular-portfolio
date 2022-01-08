@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MobileNavComponent } from './shared/mobile-nav/mobile-nav.component';
 import { ContactComponent } from './shared/contact/contact.component';
 import { ComingSoonComponent } from './coming-soon/coming-soon.component';
+import { DesktopNavComponent } from './shared/desktop-nav/desktop-nav.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { ComingSoonComponent } from './coming-soon/coming-soon.component';
     MobileNavComponent,
     ContactComponent,
     ComingSoonComponent,
+    DesktopNavComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

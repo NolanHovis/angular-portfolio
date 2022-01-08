@@ -8,3 +8,17 @@ app-mobile-nav {
   width: 100%;
   background: var(--light);
 }
+
+app-desktop-nav {
+  display: none;
+}
+
+@media screen and (min-width: 960px) {
+  app-mobile-nav {
+    display: none;
+  }
+
+  app-desktop-nav {
+    display: contents;
+  }
+}

@@ -1,0 +1,29 @@
+nav {
+  top: 0;
+  position: sticky;
+  background-color: var(--dark);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
+}
+
+.content {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logo {
+  margin: 10px;
+}
+
+.nav-list {
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-list > li {
+  margin: 10px;
+}

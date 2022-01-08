@@ -47,3 +47,33 @@
   width: 3rem;
   margin: 20px;
 }
+@media screen and(min-width: 481px) {
+}
+
+@media screen and (min-width: 960px) {
+  .section {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-content.grow {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .section-content.grow > .card {
+    width: 30%;
+    justify-content: space-between;
+  }
+
+  .about-tools {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .about-tools > .section {
+    width: 50%;
+  }
+}
