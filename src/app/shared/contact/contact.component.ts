@@ -15,7 +15,7 @@ import { NetlifyFormService } from './netlify-form.service';
 })
 export class ContactComponent implements OnInit {
   contactForm: FormGroup;
-  errorMsg: string;
+  errorMsg: string = '';
 
   constructor(
     private fb: FormBuilder,
@@ -25,6 +25,10 @@ export class ContactComponent implements OnInit {
 
   ngOnInit(): void {
     this.formInit();
+  }
+
+  closeError() {
+    this.errorMsg = '';
   }
 
   onSubmit() {
@@ -42,11 +46,11 @@ export class ContactComponent implements OnInit {
 
   private formInit() {
     this.contactForm = this.fb.group({
-      firstName: new FormControl('', Validators.required),
-      lastName: new FormControl('', Validators.required),
-      email: new FormControl('', [Validators.required, Validators.email]),
-      service: new FormControl('', Validators.required),
-      description: new FormControl('', Validators.required),
+      firstName: ['', Validators.required],
+      lastName: ['', Validators.required],
+      email: ['', Validators.required, Validators.email],
+      service: ['', Validators.required],
+      description: ['', Validators.required],
     });
   }
 }
