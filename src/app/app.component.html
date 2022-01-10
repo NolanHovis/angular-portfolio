@@ -6,7 +6,12 @@
   </div>
 </main>
 <app-footer></app-footer>
-<form action="POST" name="contact" netlify data-netlify="true" hidden>
+
+<!-- For netlify to recognize there is a form.
+    Contact Component form will be what users fill out,
+    then that information will be sent to this form and automatically
+    submitted -->
+<form action="POST" name="contact" netlify data-netlify="true">
   <div class="form-group">
     <label for="firstName">First Name</label>
     <input type="text" name="firstName" id="firstName" />
