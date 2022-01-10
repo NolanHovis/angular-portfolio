@@ -1,0 +1,33 @@
+.container {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+.thumbs-up {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark);
+  border-radius: 50%;
+  clip-path: circle(50% at 50% 50%);
+}
+
+.shadow {
+  border-radius: 50%;
+  object-fit: fill;
+  margin: 40px;
+}
