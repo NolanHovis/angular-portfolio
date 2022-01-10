@@ -10,6 +10,9 @@ import { MobileNavComponent } from './shared/mobile-nav/mobile-nav.component';
 import { ContactComponent } from './shared/contact/contact.component';
 import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 import { DesktopNavComponent } from './shared/desktop-nav/desktop-nav.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { SuccessComponent } from './shared/success/success.component';
 
 @NgModule({
   declarations: [
@@ -21,8 +24,14 @@ import { DesktopNavComponent } from './shared/desktop-nav/desktop-nav.component'
     ContactComponent,
     ComingSoonComponent,
     DesktopNavComponent,
+    SuccessComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

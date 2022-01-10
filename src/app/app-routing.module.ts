@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './shared/contact/contact.component';
+import { SuccessComponent } from './shared/success/success.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,11 @@ const routes: Routes = [
     path: 'projects',
     component: ComingSoonComponent,
   },
+  {
+    path: 'success',
+    component: SuccessComponent,
+  },
+
   {
     path: '',
     pathMatch: 'full',
