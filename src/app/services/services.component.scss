@@ -1,0 +1,34 @@
+.container {
+  padding-bottom: 40px;
+}
+
+.header {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.header-desc {
+  margin-top: 20px;
+  text-align: center;
+  width: 400px;
+}
+
+.card {
+  background-color: var(--dark);
+  padding: 40px;
+  margin: 30px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

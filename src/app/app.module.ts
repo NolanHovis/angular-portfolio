@@ -13,6 +13,7 @@ import { DesktopNavComponent } from './shared/desktop-nav/desktop-nav.component'
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SuccessComponent } from './shared/success/success.component';
+import { ServicesComponent } from './services/services.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { SuccessComponent } from './shared/success/success.component';
     ComingSoonComponent,
     DesktopNavComponent,
     SuccessComponent,
+    ServicesComponent,
   ],
   imports: [
     BrowserModule,
