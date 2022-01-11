@@ -16,6 +16,7 @@ import { NetlifyFormService } from './netlify-form.service';
 export class ContactComponent implements OnInit {
   contactForm: FormGroup;
   errorMsg: string = '';
+  requiredMsg = 'This Field is Required.';
 
   constructor(
     private fb: FormBuilder,

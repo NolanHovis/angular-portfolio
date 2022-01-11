@@ -5,48 +5,49 @@
   </h1>
 
   <hr />
-  <!--
-  <form action="POST" name="contact" netlify data-netlify="true">
-    <div class="form-group">
-      <label for="firstName">First Name</label>
-      <input type="text" name="firstName" id="firstName" />
-    </div>
-    <div class="form-group">
-      <label for="lastName">Last Name</label>
-      <input type="text" name="lastName" id="lastName" />
-    </div>
-    <div class="form-group">
-      <label for="email">Email</label>
-      <input type="text" name="email" id="email" />
-    </div>
-    <div class="form-group">
-      <label for="service">Service</label>
-      <select name="service" id="service">
-        <option value disabled selected>Select a Service</option>
-        <option value="Design">Design</option>
-        <option value="Website Development">Website Development</option>
-        <option value="Web Application">Web Application</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="description">Project Description</label>
-      <textarea type="text" name="description" id="description"></textarea>
-    </div>
-    <button class="standard dark" type="submit">Submit</button>
-  </form> -->
 
   <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="firstName">First Name</label>
       <input type="text" formControlName="firstName" id="firstName" />
+      <p
+        *ngIf="
+          !contactForm.get('firstName').valid &&
+          contactForm.get('firstName').touched
+        "
+      >
+        {{ requiredMsg }}
+      </p>
     </div>
     <div class="form-group">
       <label for="lastName">Last Name</label>
       <input type="text" formControlName="lastName" id="lastName" />
+      <p
+        *ngIf="
+          !contactForm.get('lastName').valid &&
+          contactForm.get('lastName').touched
+        "
+      >
+        {{ requiredMsg }}
+      </p>
     </div>
     <div class="form-group">
       <label for="email">Email</label>
       <input type="email" formControlName="email" id="email" />
+      <p
+        *ngIf="
+          !contactForm.get('email').valid && contactForm.get('email').touched
+        "
+      >
+        {{ requiredMsg }}
+      </p>
+      <p
+        *ngIf="
+          !contactForm.get('email').valid && contactForm.get('email').touched
+        "
+      >
+        Needs to be a verified email address.
+      </p>
     </div>
     <div class="form-group">
       <label for="service">Service</label>
@@ -56,6 +57,14 @@
         <option value="Website Development">Website Development</option>
         <option value="Web Application">Web Application</option>
       </select>
+      <p
+        *ngIf="
+          !contactForm.get('service').valid &&
+          contactForm.get('service').touched
+        "
+      >
+        {{ requiredMsg }}
+      </p>
     </div>
     <div class="form-group">
       <label for="description">Project Description</label>
@@ -64,7 +73,17 @@
         formControlName="description"
         id="description"
       ></textarea>
+      <p
+        *ngIf="
+          !contactForm.get('description').valid &&
+          contactForm.get('description').touched
+        "
+      >
+        {{ requiredMsg }}
+      </p>
     </div>
-    <button class="standard dark" type="submit">Submit</button>
+    <button class="standard dark" type="submit" [disabled]="!contactForm.valid">
+      Submit
+    </button>
   </form>
 </div>
