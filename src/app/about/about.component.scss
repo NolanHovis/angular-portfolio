@@ -7,10 +7,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 50px;
 }
 
 .heading-title {
   margin-bottom: 30px;
+}
+
+img {
+  width: 200px;
+  border-radius: 50%;
 }
 
 section {
@@ -19,6 +25,59 @@ section {
   align-items: left;
 }
 
-summary {
+details {
   background-color: var(--dark);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  max-height: 70px;
+  transition: all 2s ease-in-out;
+  margin: 20px;
+}
+
+details[open] {
+  max-height: 10000px;
+  transition: all 2s ease-in-out;
+
+  summary > .arrow {
+    transform: rotate(90deg);
+  }
+}
+
+details summary > * {
+  display: flex;
+}
+
+summary {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h2 {
+    margin-left: 10px;
+  }
+
+  .arrow {
+    color: var(--light);
+    margin-right: 10px;
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+hr {
+  margin: 15px 0;
+  height: 2px;
+  border: none;
+  background-color: var(--light);
+}
+
+.empty-space {
+  height: 150px;
+}
+
+@media screen and (min-width: 960px) {
+  .accordions {
+    margin: 0 auto;
+    max-width: 900px;
+  }
 }

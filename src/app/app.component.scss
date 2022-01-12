@@ -11,6 +11,7 @@ app-mobile-nav {
 
 app-desktop-nav {
   display: none;
+  z-index: 10;
 }
 
 @media screen and (min-width: 960px) {

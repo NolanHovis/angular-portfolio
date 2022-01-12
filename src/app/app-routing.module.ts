@@ -18,7 +18,7 @@ const routes: Routes = [
   },
   {
     path: 'about',
-    component: ComingSoonComponent,
+    component: AboutComponent,
   },
   {
     path: 'services',
