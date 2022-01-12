@@ -14,6 +14,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SuccessComponent } from './shared/success/success.component';
 import { ServicesComponent } from './services/services.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ServicesComponent } from './services/services.component';
     DesktopNavComponent,
     SuccessComponent,
     ServicesComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
