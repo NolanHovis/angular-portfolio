@@ -103,3 +103,7 @@ button:disabled {
   pointer-events: none;
   opacity: 0.5;
 }
+
+details summary::-webkit-details-marker {
+  display: none;
+}
